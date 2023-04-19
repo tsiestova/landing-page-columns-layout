@@ -1,0 +1,222 @@
+.section__info {
+  padding-top: 92px;
+  padding-bottom: 81px;
+  position: relative;
+
+  @include breakpoint(desktop) {
+    padding-top: 183px;
+    padding-bottom: 87px;
+  }
+
+  &:before {
+    content: '';
+    background: url(./assets/rectangle-mobile.png) no-repeat top center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+    
+    
+    @include breakpoint(desktop) {
+      background-image: url(./assets/rectangle-desktop.png);
+    }
+  }
+
+  .layout {
+    @include breakpoint(desktop) {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.info__pic {
+  margin-bottom: 87px;
+
+  @include breakpoint(desktop) {
+    max-width: 542px;
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+
+.section__info__text-block {
+  text-align: center;
+  
+  @include breakpoint(desktop) {
+    text-align: left;
+  }
+}
+
+.info__heading {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #07043B;
+  @include fontHeadings;
+  margin-bottom: 24px;
+
+  @include breakpoint(desktop) {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    text-align: left;
+    margin-bottom: 38px;
+  }
+}
+
+.info__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #615F7E;
+  @include fontBody;
+  margin-bottom: 35px;
+
+  @include breakpoint(desktop) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    padding-right: 193px;
+    margin-bottom: 14px;
+  }
+
+  span {
+    margin-bottom: 16px;
+    display: block;
+  }
+}
+
+.how-works__link {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #3DA08F;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding-bottom: 6px;
+  text-decoration: none;
+  border-bottom: 1px solid;
+  display: inline-block;
+  margin-bottom: 40px;
+  vertical-align: middle;
+
+  @include breakpoint(desktop) {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  
+  &:after {
+    content: '';
+    background-image: url(./assets/icon-arrow.svg);
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    display: inline-block;
+    background-size: contain;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+}
+
+
+.quotes-block {
+  background: #FFFFFF;
+  box-shadow: 0 0 10px 5px rgba(56, 56, 56, 0.0458843);
+  border-radius: 5px;
+  padding: 20px 19px 18px 28px;
+  max-width: 280px;
+  margin: auto;
+
+  @include breakpoint(desktop) {
+    max-width: 356px;
+    margin: 0;
+    padding: 29px 40px 28px 32px;
+  }
+
+  &:before {
+    content: '';
+    background-image: url(./assets/icon-quotes.svg);
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 5px;
+  }
+}
+
+.quotes__description {
+  @include fontBody;
+  font-weight: 400;
+  font-size: 9px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: #07043B;
+  margin-bottom: 11px;
+  text-align: justify;
+
+  @include breakpoint(desktop) {
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+    margin-bottom: 18px;
+  }
+}
+
+
+.quotes__author__pic {
+  width: auto;
+  height: 23px;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.quotes__author__name {
+  @include fontBody;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 15px;
+  letter-spacing: 0.55px;
+  color: #07043B;
+  text-align: left;
+
+  @include breakpoint(desktop) {
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.55px;
+  }
+}
+
+.quotes__author__position {
+  @include fontBody;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 15px;
+  letter-spacing: 0.4px;
+  color: #07043B;
+
+}
+
+.quotes__author__wrap {
+  display: flex;
+  gap: 7px;
+
+  @include breakpoint(desktop) {
+    gap: 18px;
+  }
+}

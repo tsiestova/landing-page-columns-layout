@@ -1,0 +1,106 @@
+.section__access {
+  background: #575988;
+  padding: 54px 0 71px;
+
+  @include breakpoint(desktop) {
+    padding-top: 68px;
+    padding-bottom: 62px;
+  }
+
+  .layout {
+    padding: 0 45px;
+
+    div {
+      &:first-child {
+        padding-top: 36px;
+        max-width: 544px;
+        width: 100%;
+        margin: auto;
+      }
+    }
+
+    @include breakpoint(desktop) {
+      display: flex;
+      gap: 50px;
+      align-items: center;
+      padding: 0 24px;
+    }
+  }
+
+  .sign-up-form {
+    max-width: 240px;
+    margin: auto;
+
+    @include breakpoint(desktop) {
+      padding-right: 40px;
+      padding-left: 166px;
+      margin: 0;
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .sign-up__input {
+    height: 32px;
+    margin-bottom: 8px;
+    line-height: 32px;
+
+    @include breakpoint(desktop) {
+      height: 48px;
+      margin-bottom: 13px;
+      line-height: 48px;
+    }
+  }
+
+  .submit__btn {
+    height: 32px;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 32px;
+
+    @include breakpoint(desktop) {
+      max-width: 200px;
+      height: 48px;
+      font-size: 14px;
+      line-height: 48px;
+    }
+    
+    &:hover {
+      cursor: pointer;
+      background: #6C9BFF;
+    }
+  }
+}
+
+.access__heading {
+  @include fontHeadings;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 16px;
+
+  @include breakpoint(desktop) {
+    font-size: 32px;
+    line-height: 48px;
+    text-align: left;
+  }
+}
+
+.access__description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #FFFFFF;
+  @include fontBody;
+  margin-bottom: 24px;
+
+  @include breakpoint(desktop) {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    text-align: left;
+  }
+}

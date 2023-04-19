@@ -1,0 +1,9 @@
+.layout {
+  padding: 0 27px;
+
+
+  @include breakpoint(desktop) {
+    max-width: 1331px;
+    margin: auto;
+  }
+}
