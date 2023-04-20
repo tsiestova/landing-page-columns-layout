@@ -1,4 +1,10 @@
-<svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg
+        width="7"
+        height="13"
+        viewBox="0 0 7 13"
+     fill="white"
+     xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect x="0.516846" y="0.043457" width="6.08871" height="12.825" fill="url(#pattern0)"/>
 <mask id="mask0_1_2" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="7" height="13">
 <rect x="0.516846" y="0.043457" width="6.08871" height="12.825" fill="url(#pattern1)"/>
